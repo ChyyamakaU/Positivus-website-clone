@@ -4,19 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Positivud</title>
     <link rel="stylesheet" href="src/output.css">
     <script src="https://kit.fontawesome.com/fbf4810423.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <header class="fixed top-0 z-10 bg-white px-36">
-        <nav class="flex gap-60 items-center h-32 ">
 
-            <img class="w-44" src="src/images/Logo.svg" alt="Logo">
+    <header class="fixed top-0 left-0 w-full z-10 bg-white px-6 md:px-20 lg:px-36">
 
-            <div class=" flex gap-10 font-medium items-center ">
+        <nav class="flex gap-52 md:justify-between md:gap-60 items-center h-20 md:h-32 ">
+
+            <img class="w-24 md:w-44 object-contain" src="src/images/Logo.svg" alt="Logo">
+
+            <div class="hidden md:flex gap-10 font-medium items-center ">
                 <a href="#about">About Us</a>
 
                 <a href="#service">Services</a>
@@ -25,20 +27,32 @@
                 <a href="#pricing">Pricing</a>
                 <a href="#blog">Blog</a>
 
-                <button class="border border-black py-5 px-12 mx-4 text-lg rounded-2xl font-medium hover:bg-black hover:text-white">Request a
-                    quote</button>
+                <button
+                    class="border border-black py-5 px-12 mx-4 text-lg rounded-2xl font-medium hover:bg-black hover:text-white">Request
+                    a quote</button>
+            </div>
+
+            <div class="block md:hidden text-2xl">
+                <i class="fa-solid fa-bars"></i>
             </div>
 
         </nav>
     </header>
 
     <main>
-        <section class="flex justify-between px-36 mt-32">
-            <div class="mt-20">
-                <h1 class="text-6xl font-semibold">Navigating the <br> digital landscape <br>for success</h1>
-                <p class="text-lg">Our digital marketing agency helps businesses grow and succeed <br> online through a
+        <section
+            class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 lg:px-36 mt-20 gap-10 md:mt-32">
+
+            <div class="text-center md:text-left mt-12 md:mt-20">
+
+                <h1 class="text-3xl md:text-5xl lg:text-6xl leading-snug font-semibold">Navigating the <br> digital
+                    landscape <br>for success</h1>
+                <p class="text-base mt-3 md:mt-6 md:text-lg leading-relaxed">Our digital marketing agency helps
+                    businesses grow and succeed <br> online through a
                     range of services including SEO, PPC, social media <br>marketing, and content creation.</p>
-                <button class="bg-black text-white px-12 py-5 rounded-2xl mt-5">Book a Consultation</button>
+                <button
+                    class="bg-black text-white px:5 md:px-12 py-3 md:py-5 text-sm md:text-lg rounded-md md:rounded-2xl mt-5">Book
+                    a Consultation</button>
             </div>
 
             <div>
@@ -46,37 +60,41 @@
             </div>
         </section>
 
-        <section class=" flex justify-between px-36 mt-16 pt-12">
+        <section
+            class=" flex flex-wrap justify-center items-center gap-6 px-6 md:justify-between md:px-20 lg:px-36 mt-10 md:mt-16 md:pt-12">
 
-            <img class="" src="src/images/amazon.svg" alt="amazon">
-            <img src="src/images/dribble.svg" alt="dribble">
-            <img src="src/images/hubspot.svg" alt="hubspot">
-            <img src="src/images/notion.svg" alt="notion">
-            <img src="src/images/netflix.svg" alt="netflix">
-            <img src="src/images/zoom.svg" alt="zoom">
-
+            <img class="w-16 md:w-28" src="src/images/amazon.svg" alt="amazon">
+            <img class="w-16 md:w-28" src="src/images/dribble.svg" alt="dribble">
+            <img class="w-16 md:w-28" src="src/images/hubspot.svg" alt="hubspot">
+            <img class="w-16 md:w-28" src="src/images/notion.svg" alt="notion">
+            <img class="w-16 md:w-28" src="src/images/netflix.svg" alt="netflix">
+            <img class="w-16 md:w-28" src="src/images/zoom.svg" alt="zoom">
         </section>
 
-        <section>
-            <div class="px-36 flex gap-10 mt-36 ">
-                <h2 class="bg-[#B9FF66] text-5xl font-normal rounded-lg ">Services</h2>
-                <p>At our digital marketing agency, we offer a range of services to help <br> businesses grow and
+
+        <!-- services -->
+        <section class="px-6 md:px-20 lg:px-36 mt-10 md:mt-36">
+            <div class=" flex flex-col md:flex-row md:item-center gap-6 md:gap-10 mt-10 ">
+                <h2 class="bg-[#B9FF66] text-2xl md:text-5xl font-normal rounded-lg w-fit px-2 ">Services</h2>
+                <p class="text-sm md:text-base leading-relaxed">At our digital marketing agency, we offer a range of
+                    services to help <br> businesses grow and
                     succeed
                     online. These services include
                 </p>
             </div>
 
-            <div class="grid grid-cols-2 px-36 gap-8 mt-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:mt-16 mt-7">
 
-                <div class="flex justify-between border border-[#191a23] rounded-4xl p-10 bg-gray-100 border-b-[6px]">
+                <div
+                    class="flex gap-2 justify-between border border-[#191a23] rounded-4xl p-7 md:p-10 bg-gray-100 border-b-[6px]">
 
                     <div>
-                        <p class="bg-[#B9FF66] rounded-lg">Search Engine</p>
-                        <p class="bg-[#B9FF66] rounded-lg">Optimization</p>
+                        <p class="bg-[#B9FF66] text-xs md:text-[16px] rounded-lg">Search Engine</p>
+                        <p class="bg-[#B9FF66] text-xs md:text-[16px] rounded-lg">Optimization</p>
 
                         <div class="mt-16 flex gap-4 items-center">
                             <img src="src/images/arrow.svg" alt="arrow right">
-                            <p>Service Info</p>
+                            <p class="text-xs md:text-[16px] ">Service Info</p>
                         </div>
 
                     </div>
@@ -85,15 +103,16 @@
                     </div>
                 </div>
 
-                <div class="flex justify-between border border-[#191a23]  rounded-4xl p-10 bg-[#b9ff66] border-b-[6px]">
+                <div
+                    class="flex gap-2 justify-between border border-[#191a23] rounded-4xl p-10 bg-[#b9ff66] border-b-[6px]">
 
                     <div>
-                        <p class="bg-white rounded-lg">Pay-per-click</p>
-                        <p class="bg-white rounded-lg">Advertising</p>
+                        <p class="bg-white rounded-lg text-xs md:text-[16px] ">Pay-per-click</p>
+                        <p class="bg-white rounded-lg text-xs md:text-[16px] ">Advertising</p>
 
                         <div class="mt-16 flex gap-4 items-center">
                             <img src="src/images/arrow.svg" alt="arrow right">
-                            <p>Service Info</p>
+                            <p class="text-xs md:text-[16px] ">Service Info</p>
                         </div>
 
                     </div>
@@ -102,16 +121,17 @@
                     </div>
                 </div>
 
-                <div class="flex justify-between border border-[#191a23] rounded-4xl p-10 bg-black border-b-[6px]">
+                <div
+                    class="flex  gap-2 justify-between border border-[#191a23] rounded-4xl p-10 bg-black border-b-[6px]">
 
                     <div>
-                        <p class="bg-white rounded-lg">Social Media </p>
-                        <p class="bg-white rounded-lg">Marketing</p>
+                        <p class="bg-white rounded-lg text-xs md:text-[16px] ">Social Media </p>
+                        <p class="bg-white rounded-lg text-xs md:text-[16px] ">Marketing</p>
 
 
                         <div class="mt-20 flex gap-4 items-center">
                             <img src="src/images/arrow white.svg" alt="arrow right">
-                            <p class="text-white">Service Info</p>
+                            <p class="text-white text-xs md:text-[16px] ">Service Info</p>
                         </div>
 
                     </div>
@@ -121,16 +141,17 @@
                 </div>
 
 
-                <div class="flex justify-between border border-[#191a23]  rounded-4xl p-10 bg-gray-100 border-b-[6px]">
+                <div
+                    class="flex gap-2 justify-between border border-[#191a23]  rounded-4xl p-10 bg-gray-100 border-b-[6px]">
 
                     <div>
-                        <p class="bg-[#b9ff66] rounded-lg">Email
+                        <p class="bg-[#b9ff66] rounded-lg text-xs md:text-[16px] ">Email
                         </p>
-                        <p class="bg-[#b9ff66] rounded-lg">Marketing</p>
+                        <p class="bg-[#b9ff66] rounded-lg text-xs md:text-[16px] ">Marketing</p>
 
                         <div class="mt-20 flex gap-4 items-center">
                             <img src="src/images/arrow.svg" alt="arrow right">
-                            <p>Service Info</p>
+                            <p class="text-xs md:text-[16px] ">Service Info</p>
                         </div>
 
                     </div>
@@ -139,15 +160,16 @@
                     </div>
                 </div>
 
-                <div class="flex justify-between border border-black rounded-4xl p-10 bg-[#b9ff66] border-b-[6px]">
+                <div
+                    class="flex gap-2 justify-between border border-black rounded-4xl p-10 bg-[#b9ff66] border-b-[6px]">
 
                     <div>
-                        <p class="bg-white rounded-lg">Content</p>
-                        <p class="bg-white rounded-lg">Creation</p>
+                        <p class="bg-white rounded-lg text-xs md:text-[16px] ">Content</p>
+                        <p class="bg-white rounded-lg text-xs md:text-[16px] ">Creation</p>
 
                         <div class="mt-20 flex gap-4 items-center">
                             <img src="src/images/arrow.svg" alt="arrow right">
-                            <p>Service Info</p>
+                            <p class="text-xs md:text-[16px] ">Service Info</p>
                         </div>
 
                     </div>
@@ -156,58 +178,63 @@
                     </div>
                 </div>
 
-                <div class="flex justify-between border border-[#191a23]  rounded-4xl p-10 bg-[#191a23] border-b-[6px]">
+                <div
+                    class="flex gap-2 justify-between border border-[#191a23]  rounded-4xl p-10 bg-[#191a23] border-b-[6px]">
 
                     <div>
-                        <p class="bg-white">Analytics and
+                        <p class="bg-white text-xs md:text-[16px] rounded-lg ">Analytics and
                         </p>
-                        <p class="bg-white">Tracking</p>
-
+                        <p class="bg-white text-xs md:text-[16px] rounded-lg ">Tracking</p>
 
                         <div class="mt-20 flex gap-4 items-center">
                             <img src="src/images/arrow white.svg" alt="arrow right">
-                            <p class="text-white">Service Info</p>
+                            <p class="text-white text-xs md:text-[16px] ">Service Info</p>
                         </div>
-
                     </div>
                     <div>
                         <img src="src/images/service4.webp" alt="">
                     </div>
                 </div>
-
             </div>
-
         </section>
 
 
-        <section class="flex justify-between gap-10 mx-36 rounded-4xl bg-gray-100 h-[300px] mt-32 p-12 ">
+        <section
+            class="flex flex-col md:flex-row items-center justify-between gap-10 mx-6 md:mx-20 lg:mx-36 rounded-4xl p-5 mt-20 md:mt-32 bg-gray-100 h-[300px] md:p-12 ">
 
-            <div>
-                <p class="font-semibold text-3xl">Let's make things happen</p>
-                <p class="mt-5 ">Contact us today to learn more about how our digital <br> marketing services can help
+            <div class="text-center md:text-left">
+                <p class="font-semibold text-2xl md:text-3xl leading-snug">Let's make things happen</p>
+                <p class="mt-5 text-sm md:text-base leading-relaxed">Contact us today to learn more about how our
+                    digital <br> marketing services can help
                     your business grow and <br> succeed online.</p>
-                <button class="bg-[#191a23] text-white rounded-md px-36 py-4 mt-5">Get Your Free Proposal</button>
+                <button
+                    class="bg-[#191a23] text-white rounded-sm md:rounded-md px-6 lg:px-36 py-3 md:py-4 mt-5 text-sm md:text-lg">Get
+                    Your Free Proposal</button>
             </div>
 
-            <div class="relative bottom-24">
+            <div class="hidden md:block relative ">
                 <img src="src/images/_image.webp" alt="">
             </div>
 
         </section>
 
 
-        <section>
+        <section class="mt-20 md:mt-36">
 
-            <div class="px-36 flex gap-10 mt-36 items-center">
-                <h2 class="bg-[#B9FF66] text-4xl font-normal rounded-lg ">Case Studies</h2>
-                <p>Explore Real-Life Examples of Our Proven Digital Marketing Success <br> through Our Case Studies
+            <div class="px-6 md:px-20 lg:px-36 flex flex-col md:flex-row gap-6 md:gap-10 md:items-center">
+                <h2 class="bg-[#B9FF66] text-3xl md:text-4xl font-normal rounded-lg px-2 w-fit">Case Studies</h2>
+                <p class="text-sm md:text-lg">Explore Real-Life Examples of Our Proven Digital Marketing Success <br>
+                    through Our Case Studies
 
                 </p>
             </div>
 
-            <div class="flex justify-between mt-16 mx-36 bg-[#191a23] rounded-4xl p-12">
-                <div class="border-r-2 text-gray-100 pr-16">
-                    <p class="text-white">For a local restaurant, we <br>implemented a targeted PPC <br>campaign that
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-16 mx-6 md:mx-20 lg:mx-36 bg-[#191a23] rounded-4xl p-6 md:p-12">
+
+                <div class="md:border-r-2 text-gray-100 md:pr-16">
+                    <p class="text-white text-sm md:text-[16px]">For a local restaurant, we <br>implemented a targeted
+                        PPC <br>campaign that
                         resulted in a 50%
                         <br>increase in website traffic and a 25% <br>increase in sales.
                     </p>
@@ -217,9 +244,12 @@
                     </div>
                 </div>
 
-                <div class="border-r-2 text-gray-100 pr-16">
-                    <p class="text-white">FFor a B2B software company, we <br>developed an SEO strategy that <br>
-                        resulted in a first page ranking for key <br>keywords and a 200% increase in <br>organic
+                <hr class="block md:hidden text-white">
+
+                <div class="md:border-r-2 text-gray-100 md:pr-16">
+                    <p class="text-white text-sm md:text-[16px]">For a B2B software company, we<br>developed an SEO
+                        strategy that <br>
+                        resulted in a first page ranking for<br>keywords and a 200% increase in <br>organic
                         traffic.
                     </p>
                     <div class="flex gap-4 mt-4 items-center">
@@ -228,8 +258,11 @@
                     </div>
                 </div>
 
-                <div>
-                    <p class="text-white">For a national retail chain, we created a <br>social media marketing campaign
+                <hr class="block md:hidden text-white">
+
+                <div class=" text-gray-100 md:pr-16">
+                    <p class="text-white text-sm md:text-[16px]">For a national retail chain, we created<br>social media
+                        marketing campaign
                         that <br>increased followers by 25% and <br> generated a 20% increase in online <br> sales.
                     </p>
                     <div class="flex gap-4 mt-4 items-center">
@@ -241,30 +274,33 @@
 
         </section>
 
-        <section>
+        <section class="mt-20 md:mt-36">
 
-            <div class="px-36 flex items-center gap-10 mt-36 ">
-                <h2 class="bg-[#B9FF66] text-4xl font-normal rounded-lg ">Our Working Process</h2>
-                <p>Step-by-Step Guide to Achieving Your Business Goals
+            <div class="px-6 md:px-20 lg:px-36 flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
+                <h2 class="bg-[#B9FF66] text-2xl md:text-4xl font-normal px-2 w-fit rounded-lg ">Our Working Process
+                </h2>
+                <p class="text-sm md:text-[16px] leading-relaxed">Step-by-Step Guide to Achieving Your Business Goals
                 </p>
             </div>
 
-            <div>
+            <div class="mt-12 mx-6 md:mx-20 lg:mx-36">
 
-                <div class="rounded-4xl bg-[#b9ff66] mx-36 p-12 mt-20 border border-[#191a23] my-7 border-b-[6px]">
+                <div
+                    class="rounded-4xl bg-[#b9ff66] p-6 md:p-12 mt-10 md:mt-20 border border-[#191a23] my-7 border-b-[6px]">
+
                     <div class="flex justify-between items-center mb-10">
                         <div class="flex gap-5 items-center">
-                            <p class="text-5xl">01</p>
-                            <p>Consultation</p>
+                            <p class=" text-lg md:text-5xl">01</p>
+                            <p text-sm md:text-[16px]>Consultation</p>
                         </div>
                         <div>
-                            <i class="fa-solid fa-minus  rounded-full bg-gray-100 border border-[#191a23] "></i>
+                            <i class="fa-solid fa-minus rounded-full bg-gray-100 border border-[#191a23] "></i>
                         </div>
                     </div>
 
                     <hr class="border">
 
-                    <div class="mt-5">
+                    <div class="mt-2 md:mt-5 text-sm md:text-[16px]">
                         <p>During the initial consultation, we will discuss your business goals and objectives, target
                             audience, and current marketing efforts. This will allow us to understand your needs and
                             tailor
@@ -272,12 +308,35 @@
                     </div>
                 </div>
 
+                <div
+                    class="flex justify-between items-center mb-6 bg-gray-100 rounded-4xl p-6 md:p-12  border border-[#191a23] border-b-[6px] hover:bg-[#b9ff66]">
+                    <div class="flex gap-5 items-center">
+                        <p class=" text-lg md:text-5xl">02</p>
+                        <p text-sm md:text-[16px]>Research</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-plus rounded-full bg-gray-100 border border-[#191a23]"></i>
+                    </div>
+                </div>
+
 
                 <div
-                    class="flex justify-between items-center mb-6 bg-gray-100 rounded-4xl mx-36 p-12 border border-[#191a23] border-b-[6px] hover:bg-[#b9ff66]">
+                    class="flex justify-between items-center mb-6 bg-gray-100 rounded-4xl p-6 md:p-12 border border-[#191a23]  border-b-[6px] hover:bg-[#b9ff66]">
                     <div class="flex gap-5 items-center">
-                        <p class="text-5xl">02</p>
-                        <p>Research</p>
+                        <p class=" text-lg md:text-5xl">03</p>
+                        <p text-sm md:text-[16px]>Implementation</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-plus rounded-full bg-gray-100 border border-[#191a23]"></i>
+                    </div>
+                </div>
+
+
+                <div
+                    class="flex justify-between items-center mb-6 bg-gray-100 rounded-4xl p-6 md:p-12 border border-[#191a23] hover:bg-[#b9ff66] border-b-[6px]">
+                    <div class="flex gap-5 items-center">
+                        <p class=" text-lg md:text-5xl">04</p>
+                        <p text-sm md:text-[16px]>Optimization</p>
                     </div>
                     <div>
                         <i class="fa-solid fa-plus rounded-full bg-gray-100 border border-[#191a23] "></i>
@@ -286,34 +345,10 @@
 
 
                 <div
-                    class="flex justify-between items-center mb-6 bg-gray-100 rounded-4xl mx-36 p-12 border border-[#191a23]  border-b-[6px] hover:bg-[#b9ff66]">
+                    class="flex justify-between items-center mb-6 bg-gray-100 rounded-4xl p-6 md:p-12 border border-[#191a23] hover:bg-[#b9ff66] border-b-[6px]">
                     <div class="flex gap-5 items-center">
-                        <p class="text-5xl">03</p>
-                        <p>Implementation</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-plus rounded-full bg-gray-100 border border-[#191a23]  "></i>
-                    </div>
-                </div>
-
-
-                <div
-                    class="flex justify-between items-center mb-6 bg-gray-100 rounded-4xl mx-36 p-12 border border-[#191a23] hover:bg-[#b9ff66] border-b-[6px]">
-                    <div class="flex gap-5 items-center">
-                        <p class="text-5xl">04</p>
-                        <p>Optimization</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-plus rounded-full bg-gray-100 border border-[#191a23] "></i>
-                    </div>
-                </div>
-
-
-                <div
-                    class="flex justify-between items-center mb-6 bg-gray-100 rounded-4xl mx-36 p-12 border border-[#191a23] hover:bg-[#b9ff66] border-b-[6px]">
-                    <div class="flex gap-5 items-center">
-                        <p class="text-5xl">05</p>
-                        <p>Reporting</p>
+                        <p class=" text-lg md:text-5xl">05</p>
+                        <p text-sm md:text-[16px]>Reporting</p>
                     </div>
                     <div>
                         <i class="fa-solid fa-plus rounded-full bg-gray-100 border border-[#191a23] "></i>
@@ -321,10 +356,10 @@
                 </div>
 
                 <div
-                    class="flex justify-between items-center bg-gray-100 rounded-4xl mx-36 p-12 border border-[#191a23] hover:bg-[#b9ff66] border-b-[6px]">
+                    class="flex justify-between items-center bg-gray-100 rounded-4xl p-6 md:p-12 border border-[#191a23] hover:bg-[#b9ff66] border-b-[6px]">
                     <div class="flex gap-5 items-center">
-                        <p class="text-5xl">06</p>
-                        <p>Improvement</p>
+                        <p class=" text-lg md:text-5xl">06</p>
+                        <p text-sm md:text-[16px]>Improvement</p>
                     </div>
                     <div>
                         <i class="fa-solid fa-plus rounded-full bg-gray-100 border border-[#191a23] "></i>
@@ -333,22 +368,22 @@
             </div>
         </section>
 
+        <section class="mt-20 md:mt-36 ">
 
-        <section>
-
-            <div class="px-36 flex items-center gap-10 mt-36 ">
-                <h2 class="bg-[#B9FF66] text-4xl font-normal rounded-lg ">Team</h2>
-                <p>Meet the skilled and experienced team behind our successful digital marketing strategies
+            <div class="flex flex-col md:flex-row md:gap-10 md:mt-36 mx-6 md:mx-36">
+                <h2 class="bg-[#B9FF66] text-2xl md:text-4xl font-normal rounded-lg ">Team</h2>
+                <p class="mt-3">Meet the skilled and experienced team behind our successful digital marketing strategies
                 </p>
             </div>
 
-            <div class="grid grid-cols-3 gap-7 mx-36 mt-16">
-                <div class="rounded-4xl border border-[#191a23]  p-12 border-b-[6px]">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-7 md:mx-36 mt-16">
+
+                <div class="rounded-4xl border border-[#191a23] mx-6 md:mx-0 p-12 border-b-[6px]">
 
                     <div class="flex gap-5">
                         <img class="object-contain" src="src/images/CEO.webp" alt="CEO">
                         <div>
-                            <img class="relative left-20 ml-10" src="src/images/linkedin.svg" alt="linkedin">
+                            <img class="relative left-20 md:ml-10" src="src/images/linkedin.svg" alt="linkedin">
                             <p class="mt-8 font-semibold">John Smith</p>
                             <p class="text-sm ">CEO and founder</p>
                         </div>
@@ -356,16 +391,18 @@
 
                     <div>
                         <hr class="my-5 ">
-                        <p>10+ years of experience in digital <br>marketing. Expertise in SEO, PPC, <br> and content
+                        <p class="text-sm md:text-[16px]">10+ years of experience in digital <br>marketing. Expertise in
+                            SEO, PPC, <br> and content
                             strategy</p>
                     </div>
                 </div>
-                <div class="rounded-4xl border border-[#191a23] p-12 border-b-[6px]">
+
+                <div class="rounded-4xl border border-[#191a23] p-12 mx-6 md:mx-0 border-b-[6px]">
 
                     <div class="flex gap-5">
                         <img class="object-contain" src="src/images/_image (1).webp" alt="Director of operations">
                         <div>
-                            <img class="relative left-20 ml-10" src="src/images/linkedin.svg" alt="linkedin">
+                            <img class="relative left-20 md:ml-10" src="src/images/linkedin.svg" alt="linkedin">
                             <p class="mt-8 font-semibold">Jane Doe</p>
                             <p class="text-sm">Director of Operations</p>
                         </div>
@@ -373,18 +410,19 @@
 
                     <div>
                         <hr class="my-5 ">
-                        <p>7+ years of experience in project <br>management and team leadership. <br>Strong
+                        <p class="text-sm md:text-[16px]">7+ years of experience in project <br>management and team
+                            leadership. <br>Strong
                             organizational
                             and communication skills</p>
                     </div>
                 </div>
 
-                <div class="rounded-4xl border border-[#191a23]  p-12 border-b-[6px]">
+                <div class="rounded-4xl border border-[#191a23] p-12 mx-6 md:mx-0  border-b-[6px]">
 
                     <div class="flex gap-5">
                         <img class="object-contain" src="src/images/_image (2).webp" alt="Senior SEO specialist">
                         <div>
-                            <img class="relative left-20 ml-10" src="src/images/linkedin.svg" alt="linkedin">
+                            <img class="relative left-20 md:ml-10" src="src/images/linkedin.svg" alt="linkedin">
                             <p class="mt-8 font-semibold">Michael Brown</p>
                             <p class="text-sm">Senior SEO specialist</p>
                         </div>
@@ -392,19 +430,20 @@
 
                     <div>
                         <hr class="my-5 ">
-                        <p>5+ years of experience in SEO and <br> content creation. Proficient in <br> keyword research
+                        <p class="text-sm md:text-[16px]">5+ years of experience in SEO and <br> content creation.
+                            Proficient in <br> keyword research
                             and
                             on-page <br>
                             optimization</p>
                     </div>
                 </div>
 
-                <div class="rounded-4xl border border-[#191a23]  p-12 border-b-[6px]">
+                <div class="rounded-4xl border border-[#191a23] mx-6 md:mx-0  p-12 border-b-[6px]">
 
                     <div class="flex gap-5">
                         <img class="object-contain" src="src/images/_image (3).webp" alt="PPC Manager">
                         <div>
-                            <img class="relative left-20 ml-10" src="src/images/linkedin.svg" alt="linkedin">
+                            <img class="relative left-20 md:ml-10" src="src/images/linkedin.svg" alt="linkedin">
                             <p class="mt-8 font-semibold">Emily Johnson</p>
                             <p class="text-sm">PPC Manager</p>
                         </div>
@@ -412,7 +451,8 @@
 
                     <div>
                         <hr class="my-5 ">
-                        <p>3+ years of experience in paid <br> search advertising. Skilled in <br> campaign management
+                        <p class="text-sm md:text-[16px]">3+ years of experience in paid <br> search advertising.
+                            Skilled in <br> campaign management
                             and
                             <br> performance analysis
                         </p>
@@ -420,12 +460,12 @@
                 </div>
 
 
-                <div class="rounded-4xl border border-[#191a23] p-12 border-b-[6px]">
+                <div class="rounded-4xl border border-[#191a23] p-12 mx-6 md:mx-0 border-b-[6px]">
 
                     <div class="flex gap-5">
                         <img class="object-contain" src="src/images/_image (4).webp" alt="Social Media Specialist">
                         <div>
-                            <img class="relative left-20 ml-10" src="src/images/linkedin.svg" alt="linkedin">
+                            <img class="relative left-20 md:ml-10" src="src/images/linkedin.svg" alt="linkedin">
                             <p class="mt-8 font-semibold">Brian Williams</p>
                             <p class="text-sm">Social Media Specialist</p>
                         </div>
@@ -433,18 +473,19 @@
 
                     <div>
                         <hr class="my-5 ">
-                        <p>4+ years of experience in social <br> media marketing. Proficient in <br> creating and
+                        <p class="text-sm md:text-[16px]">4+ years of experience in social <br> media marketing.
+                            Proficient in <br> creating and
                             scheduling content, <br>analyzing metrics, and building <br>engagement
                         </p>
                     </div>
                 </div>
 
-                <div class="rounded-4xl border border-[#191a23]  p-12 border-b-[6px]">
+                <div class="rounded-4xl border border-[#191a23] mx-6 md:mx-0  p-12 border-b-[6px]">
 
                     <div class="flex gap-5">
                         <img class="object-contain" src="src/images/_image (5).webp" alt="Content creator">
                         <div>
-                            <img class="relative left-20 ml-10" src="src/images/linkedin.svg" alt="linkedin">
+                            <img class="relative left-20 md:ml-10" src="src/images/linkedin.svg" alt="linkedin">
                             <p class="mt-8 font-semibold">Sarah Kim</p>
                             <p class="text-sm">Content Creator</p>
                         </div>
@@ -452,31 +493,37 @@
 
                     <div>
                         <hr class="my-5 ">
-                        <p>2+ years of experience in writing <br>and editing. Skilled in creating <br> compelling,
+                        <p class="text-sm md:text-[16px]">2+ years of experience in writing <br>and editing. Skilled in
+                            creating <br> compelling,
                             SEO-optimized content <br> for various industries
                         </p>
                     </div>
                 </div>
             </div>
 
-            <button class="bg-[#191a23]  text-white py-4 px-9 rounded-lg absolute right-0 mx-36 mt-10">See all
+            <button
+                class="bg-[#191a23]  text-white md:py-4 md:px-9 text-sm md:text-lg px-5 py-2 rounded-lg absolute right-0 mr-6 mt-4 md:mx-36 md:mt-10">See
+                all
                 team</button>
         </section>
 
 
-        <section>
+        <section class="mt-20 md:mt-36">
 
-            <div class="px-36 flex items-center gap-10 mt-40 ">
-                <h2 class="bg-[#B9FF66] text-4xl font-normal rounded-lg ">Testmonials</h2>
-                <p>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about <br> Our Digital Marketing
-                    Services
+            <div class="flex flex-col md:flex-row md:gap-10 md:mt-40 mx-6 md:mx-36">
+
+                <h2 class=" class="bg-[#B9FF66] text-2xl md:text-4xl font-normal rounded-lg w-fit px-2">Testmonials</h2>
+                <p class=" mt-3 text-sm md:text-[16px]">Hear from Our Satisfied Clients: Read Our Testimonials to Learn
+                More about <br> Our Digital Marketing
+                Services
                 </p>
             </div>
 
-            <div class="bg-[#191a23]  rounded-4xl p-20 mt-16 mx-36">
+            <div class="bg-[#191a23] mt-6 mx-6 rounded-4xl md:p-20 md:mt-16 md:mx-36">
 
-                <div class="flex justify-center gap-16">
-                    <div>
+                <div class="flex flex-col md:flex-row md:justify-center md:gap-16 mx-6 md:mx-0">
+
+                    <div class="mt-5 md:mt-0">
                         <div class="border border-[#b9ff66] rounded-4xl p-10 text-white">
                             <p class="text-sm ">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Explicabo
                                 facilis,
@@ -490,7 +537,7 @@
                         <p class="text-sm text-white pl-10">CEO Beauty Empire</p>
                     </div>
 
-                    <div>
+                    <div class="mt-5 md:mt-0">
 
                         <div class="border border-[#b9ff66] rounded-4xl p-10 text-white">
                             <p class="text-sm ">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Explicabo
@@ -502,10 +549,11 @@
 
                         </div>
                         <p class="text-sm text-[#b9ff66] font-semibold mt-7 pl-10">Amaka U</p>
-                        <p class="text-sm pl-10">Marketing Expert</p>
+                        <p class="text-sm pl-10 text-white">Marketing Expert</p>
                     </div>
                 </div>
-                <div class="mt-24 flex gap-32 justify-center items-center ">
+
+                <div class="hidden mt-24 md:flex md:gap-32 md:justify-center md:items-center ">
 
                     <i class="fa-solid fa-arrow-left text-white text-4xl"></i>
                     <div class="flex gap-4">
@@ -523,22 +571,20 @@
         </section>
 
 
-        <section>
-            <div class="px-36 flex items-center gap-10 mt-40">
-                <h2 class="bg-[#B9FF66] text-4xl font-normal rounded-lg ">Testmonials</h2>
-                <p>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about <br> Our Digital Marketing
-                    Services
+        <section class="mt-20 md:mt-36">
+            <div class="flex flex-col md:flex-row md:gap-10 md:mt-40 mx-6 md:mx-36">
+                <h2 class="bg-[#B9FF66] text-2xl md:text-4xl font-normal rounded-lg w-fit px-2 ">Contact Us</h2>
+                <p class=" mt-3 text-sm md:text-[16px]">Connect with Us: Let's Discuss Your Digital Marketing Needs
                 </p>
             </div>
 
+            <div class="bg-gray-100 rounded-4xl mx-6 md:mx-36 md:my-16 px-0 mt-6 overflow-hidden">
 
-            <div class="bg-gray-100 rounded-4xl mx-36 my-16 px-0 overflow-hidden">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start ">
 
-                <div class="flex justify-between items-start ">
+                    <div class="w-full md:w-1/3 p-6 md:p-0 md:mt-20 ">
 
-                    <div class="mt-20">
-
-                        <div class="ml-20 flex items-center gap-8">
+                        <div class="md:ml-20 flex flex-col md:flex-row md:items-center gap-3 md:gap-8">
                             <label class="flex items-center gap-2 cursor-pointer">
                                 <input type="radio" name="contact-type" class="accent-[#B9FF66] w-7 h-7">
                                 <span>Say Hi</span>
@@ -550,16 +596,16 @@
                             </label>
                         </div>
 
-                        <form action="" class="ml-20 w-[120%] mt-5">
-                            <label>Name*</label><br>
-                            <input class="w-full rounded-2xl bg-white border border-[#191a23]  py-4 px-4 my-3"
+                        <form action="" class="md:ml-20 md:w-[120%] mt-5">
+                            <label class="text-sm md:text-base">Name*</label><br>
+                            <input class="w-full rounded-2xl bg-white border border-[#191a23] outline-0 py-4 px-4 my-3"
                                 type="text" placeholder="Name"><br>
 
-                            <label>Email*</label><br>
+                            <label class="text-sm md:text-base">Email*</label><br>
                             <input class="w-full rounded-2xl bg-white border border-[#191a23]  py-4 px-4 my-3"
                                 type="email" placeholder="Email"><br>
 
-                            <label>Message*</label><br>
+                            <label class="text-sm md:text-base">Message*</label><br>
                             <textarea class="w-full rounded-2xl bg-white border border-[#191a23]  py-4 px-4 mt-2"
                                 rows="2" placeholder="Message"></textarea>
 
@@ -567,10 +613,9 @@
                                 Submit
                             </button>
                         </form>
-
                     </div>
 
-                    <div class="flex justify-end w-[55%]">
+                    <div class="hidden md:flex md:justify-end md:w-[55%]">
                         <img class="relative left-72" src="src/images/_image (6).webp" alt="">
                     </div>
                 </div>
@@ -579,15 +624,14 @@
         </section>
     </main>
 
+    <footer class="mt-20 md:mt-32 rounded-t-3xl bg-[#191a23] mx-6 md:mx-20 lg:mx-36 px-6 md:px-12 lg:px-20 py-10 md:pt-14">
 
-    <footer class="mt-32 rounded-t-4xl bg-[#191a23] mx-36 px-20 pt-14">
+        <div class="flex flex-col lg:flex-row justify-between items-center gap-10">
 
-        <div class="flex justify-between items-center gap-10 ">
-
-            <img class="w-44" src="src/images/logoss.svg" alt="">
+            <img class="w-32 md:w-44" src="src/images/logoss.svg" alt="">
 
 
-            <div class=" flex gap-10 font-medium items-center text-white ">
+            <div class=" flex gap-4 md:gap-10 font-medium items-center text-white ">
                 <a href="#about">About Us</a>
 
                 <a href="#service">Services</a>
@@ -613,14 +657,14 @@
             </div>
 
 
-            <div class="flex gap-4 items-center w-2/3 bg-[#292a32] rounded-2xl p-10">
+            <div class="hidden md:flex gap-4 items-center w-2/3 bg-[#292a32] rounded-2xl p-10">
                 <input class="border border-white rounded-xl pl-7 py-4 pr-24 text-gray-300" type="text"
                     placeholder="Email">
                 <button class="bg-[#b9ff66] rounded-lg px-16 py-4 text-sm hover:bg-white">Subscribe to News</button>
             </div>
         </div>
 
-    <hr class="py-10 mt-11 text-white">
+        <hr class="py-10 mt-11 text-white">
 
 
     </footer>
